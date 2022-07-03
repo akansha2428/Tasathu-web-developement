@@ -1,0 +1,35 @@
+#include <iostream>
+
+using namespace std;
+
+class add
+{
+    int a,b;
+public:
+    void getdata();
+    void putdata();
+};
+void add::getdata()
+{
+    cout<<"enter two numbers:"<<endl;
+    cin>>a>>b;
+}
+void add::putdata()
+{
+    cout<<"sum="<<a+b;
+}
+int main()
+{
+    add aa[5];
+    int i;
+    for(i=0;i<5;i++)
+    {
+        aa[i].getdata();
+    }
+    for(i=0;i<5;i++)
+    {
+        aa[i].putdata();
+    }
+
+}
+
